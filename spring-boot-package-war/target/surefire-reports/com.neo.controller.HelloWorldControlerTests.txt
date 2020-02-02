@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.neo.controller.HelloWorldControlerTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.335 sec <<< FAILURE! - in com.neo.controller.HelloWorldControlerTests
+getHello(com.neo.controller.HelloWorldControlerTests)  Time elapsed: 0.697 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+	at com.neo.controller.HelloWorldControlerTests.setUp(HelloWorldControlerTests.java:26)
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.ValidationException
+	at com.neo.controller.HelloWorldControlerTests.setUp(HelloWorldControlerTests.java:26)
+
