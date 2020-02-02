@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.neo.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.33 sec <<< FAILURE! - in com.neo.ApplicationTests
+contextLoads(com.neo.ApplicationTests)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.boot.autoconfigure.jackson.JacksonProperties org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration.jacksonProperties; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.jackson.CONFIGURATION_PROPERTIES': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.boot.autoconfigure.jackson.JacksonProperties org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration.jacksonProperties; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.jackson.CONFIGURATION_PROPERTIES': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.jackson.CONFIGURATION_PROPERTIES': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.ValidationException
+

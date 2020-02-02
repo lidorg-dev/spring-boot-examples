@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.neo.controller.HelloTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.029 sec <<< FAILURE! - in com.neo.controller.HelloTests
+getHello(com.neo.controller.HelloTests)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/ValidationException
+	at com.neo.controller.HelloTests.setUp(HelloTests.java:29)
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.ValidationException
+	at com.neo.controller.HelloTests.setUp(HelloTests.java:29)
+
